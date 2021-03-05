@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TestApp
 {
@@ -16,10 +17,10 @@ namespace TestApp
 
             Console.WriteLine();
 
-            Rectangle r = new Rectangle(width, height);
+            Rectangle rect = new Rectangle(width, height);
 
-            Console.WriteLine("Area is:" + r.getArea());
-            Console.WriteLine("Perimeter is:" + r.getPerimeter());
+            Console.WriteLine("Area is:" + rect.getArea());
+            Console.WriteLine("Perimeter is:" + rect.getPerimeter());
 
 
             Console.WriteLine("Enter Side Length:");
@@ -27,11 +28,19 @@ namespace TestApp
 
             Console.WriteLine();
 
-            Square s = new Square(length);
+            Square sq = new Square(length);
 
-            Console.WriteLine("Area is:" + s.getArea());
-            Console.WriteLine("Perimeter is:" + s.getPerimeter());
+            Console.WriteLine("Area is:" + sq.getArea());
+            Console.WriteLine("Perimeter is:" + sq.getPerimeter());
 
+            List<Rectangle> listOfRectangles = new List<Rectangle>();
+            listOfRectangles.Add(rect);
+            listOfRectangles.Add(sq);
+
+            foreach (Rectangle r in listOfRectangles)
+            {
+                Console.WriteLine(r.ToString());
+            }
 
 
             Console.ReadLine();

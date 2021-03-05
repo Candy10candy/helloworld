@@ -26,18 +26,22 @@ namespace TestApp
         
         }
 
-        public int getArea() 
+        public virtual int getArea() 
         {
             return width * height;
         
         }
 
-        public int getPerimeter()
+        public virtual int getPerimeter()
         {
             return 2 * (width + height);
         
         }
 
+        public override string ToString()
+        {
+            return "I am a rectangle";
+        }
 
     }
 }

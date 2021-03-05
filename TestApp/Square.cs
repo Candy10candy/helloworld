@@ -4,34 +4,22 @@ using System.Text;
 
 namespace TestApp
 {
-    class Square
+    class Square : Rectangle
     {
-        private int length;
-        public int Length
+       public Square(int length) : base (length, length)
+       {
+       }
+
+        public override int getPerimeter()
+        { return Width * 4;  }
+
+        public override int getArea()
+        { return Width * Width; }
+
+        public override string ToString()
         {
-            get { return length; }
-            set { length = value; }
+            return "I am a square";
         }
-
-        public Square(int l)
-        {
-            length = l;
-           
-
-        }
-
-        public int getArea()
-        {
-            return length * length;
-
-        }
-
-        public int getPerimeter()
-        {
-            return 4 * length;
-
-        }
-
 
     }
 }
