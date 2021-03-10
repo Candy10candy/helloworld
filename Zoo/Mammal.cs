@@ -23,17 +23,17 @@ namespace Zoo
 
         }
 
-        public string produceMilk()
+        public string ProduceMilk()
         { return "As a mammal, " + Name + "s can produce milk."; }
 
-        public string layEggs()
+        public string LayEggs()
         {
             if (Eggs == true)
             { return Name + "s lay eggs"; }
             else
             { return Name + "s lay eggs"; }
 
-            }
+        }
 
     }
 }

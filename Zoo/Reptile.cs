@@ -22,10 +22,10 @@ namespace Zoo
          
         }
 
-        public string layEgg()
-        { return "As a reptile, " + Name + "s lay " + Eggs + " eggs."; }
+        public string LayEgg()
+        { return Name + "s lay " + Eggs + " eggs."; }
 
-        public string molt()
+        public string Molt()
         { return "As a reptile, " + Name + "s molt."; }
 
     }
